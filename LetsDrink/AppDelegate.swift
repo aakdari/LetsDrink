@@ -19,11 +19,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
-        // Override point for customization after application launch.
+        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+        // Override point for customization after application launch
+        
+        // 1 - makeschool guidance
+        let storyboard = UIStoryboard(name: "Login", bundle: .main)
+        
+        // 2
+        if let initialViewController = storyboard.instantiateInitialViewController() {
+                //2
+            window?.rootViewController = initialViewController
+            // 4
+            window?.makeKeyAndVisible()
+        }
+        
         return true
     }
+
     
-    // Initialize the FB SDK somehow
+    //this is for managing urls somehow? who knows?
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool { return ApplicationDelegate.shared.application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+        
+    }
+
     
 
     func applicationWillResignActive(_ application: UIApplication) {

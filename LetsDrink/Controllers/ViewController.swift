@@ -9,9 +9,15 @@
 import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
+import FirebaseUI
+
 
 class ViewController: UIViewController {
 
+    // outlets and variables
+   
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -19,16 +25,7 @@ class ViewController: UIViewController {
         // loginButton.center = view.center
           
         // view.addSubview(loginButton)
-
-    }
-
-    @IBAction func loginWithFacebook(_ sender: Any) {
         
     }
-        
-  
-}
-    
 
-
-
+    }

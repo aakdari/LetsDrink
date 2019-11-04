@@ -30,6 +30,8 @@
 		B2D7840E2340515400AE6A78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2D7840D2340515300AE6A78 /* GoogleService-Info.plist */; };
 		B2D7840F2340515400AE6A78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2D7840D2340515300AE6A78 /* GoogleService-Info.plist */; };
 		B2D784102340515400AE6A78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2D7840D2340515300AE6A78 /* GoogleService-Info.plist */; };
+		B2EA4539236F75DE00DBC4B3 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2EA4538236F75DE00DBC4B3 /* Login.storyboard */; };
+		B2EA453B236F76D500DBC4B3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EA453A236F76D500DBC4B3 /* LoginViewController.swift */; };
 		D1BE6CC3ACF671206064E9FD /* Pods_LetsDrinkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC047E93439DC0204FE68E5 /* Pods_LetsDrinkUITests.framework */; };
 		E4E10E60222A89499A9D431D /* Pods_LetsDrink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA9A26223A086F034B2862E /* Pods_LetsDrink.framework */; };
 /* End PBXBuildFile section */
@@ -79,6 +81,8 @@
 		B25D466E2313751900590DE1 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		B25D46722313752800590DE1 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		B2D7840D2340515300AE6A78 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B2EA4538236F75DE00DBC4B3 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		B2EA453A236F76D500DBC4B3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BA65A1FABBD6F22F45CCCDBB /* Pods_LetsDrinkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsDrinkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -173,16 +177,14 @@
 				B25D4669231374C900590DE1 /* Frameworks */,
 				B25D466023135CB300590DE1 /* LetsDrink.entitlements */,
 				B25D463223135BE800590DE1 /* AppDelegate.swift */,
+				B2EA4535236F73F400DBC4B3 /* Controllers */,
 				B25D466E2313751900590DE1 /* FBSDKShareKit.framework */,
 				B25D46722313752800590DE1 /* FBSDKLoginKit.framework */,
-				B25D463423135BE800590DE1 /* ViewController.swift */,
 				B25D466A2313750B00590DE1 /* FBSDKCoreKit.framework */,
 				B25D4665231374B500590DE1 /* Bolts.framework */,
-				B25D463623135BE800590DE1 /* Main.storyboard */,
 				B25D463923135BEA00590DE1 /* Assets.xcassets */,
-				B25D463B23135BEA00590DE1 /* LaunchScreen.storyboard */,
-				B2D7840D2340515300AE6A78 /* GoogleService-Info.plist */,
-				B25D463E23135BEA00590DE1 /* Info.plist */,
+				B2EA4536236F742400DBC4B3 /* Storyboards */,
+				B2EA4537236F743600DBC4B3 /* Supporting Files */,
 			);
 			path = LetsDrink;
 			sourceTree = "<group>";
@@ -210,6 +212,34 @@
 			children = (
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2EA4535236F73F400DBC4B3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B25D463423135BE800590DE1 /* ViewController.swift */,
+				B2EA453A236F76D500DBC4B3 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B2EA4536236F742400DBC4B3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B25D463B23135BEA00590DE1 /* LaunchScreen.storyboard */,
+				B2EA4538236F75DE00DBC4B3 /* Login.storyboard */,
+				B25D463623135BE800590DE1 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B2EA4537236F743600DBC4B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B25D463E23135BEA00590DE1 /* Info.plist */,
+				B2D7840D2340515300AE6A78 /* GoogleService-Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +359,7 @@
 				B25D463D23135BEA00590DE1 /* LaunchScreen.storyboard in Resources */,
 				B2D7840E2340515400AE6A78 /* GoogleService-Info.plist in Resources */,
 				B25D463A23135BEA00590DE1 /* Assets.xcassets in Resources */,
+				B2EA4539236F75DE00DBC4B3 /* Login.storyboard in Resources */,
 				B25D463823135BE800590DE1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,6 +490,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2EA453B236F76D500DBC4B3 /* LoginViewController.swift in Sources */,
 				B25D463523135BE800590DE1 /* ViewController.swift in Sources */,
 				B25D463323135BE800590DE1 /* AppDelegate.swift in Sources */,
 			);
@@ -638,6 +670,7 @@
 			baseConfigurationReference = 3EAB2DE735FF0508CDD2C790 /* Pods-LetsDrink.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LetsDrink/LetsDrink.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TT79Z6BW63;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -645,11 +678,12 @@
 					"$(PROJECT_DIR)/LetsDrink",
 					"$(PROJECT_DIR)/LetsDrink/Frameworks",
 				);
-				INFOPLIST_FILE = LetsDrink/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LetsDrink/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SocialTools.LetsDrink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -662,6 +696,7 @@
 			baseConfigurationReference = 778DE28FEB4A17CF822087A3 /* Pods-LetsDrink.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LetsDrink/LetsDrink.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TT79Z6BW63;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -669,11 +704,12 @@
 					"$(PROJECT_DIR)/LetsDrink",
 					"$(PROJECT_DIR)/LetsDrink/Frameworks",
 				);
-				INFOPLIST_FILE = LetsDrink/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LetsDrink/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SocialTools.LetsDrink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
