@@ -10,10 +10,11 @@ import Foundation
 import Firebase
 import FirebaseCore
 import UIKit
-import FBSDKCoreKit
-import FBSDKLoginKit
 import FirebaseUI
 import FirebaseAuth
+import FirebaseDatabase
+
+typealias FIRUser = FirebaseAuth.User
 
 class LoginViewController: UIViewController {
     
@@ -29,44 +30,48 @@ class LoginViewController: UIViewController {
     }
     
     //Actions
-    
    
-    @IBAction func loginButtonPressed(_ sender: Any) {
-        //access FUIAuth
-        let authUI = FUIAuth.defaultAuthUI()
-           authUI?.delegate = self as? FUIAuthDelegate
-            
-          let providers: [FUIAuthProvider] = [
-              FUIFacebookAuth()
-        ]
-            authUI?.providers = providers
-           
-            let authViewController = authUI?.authViewController()
-            self.present(authViewController!, animated: true) {}
-        
-        print("button pressed")
        
-        //if Auth.auth().currentUser != nil {
-            // user is signed in
-       //     let userInfo = Auth.auth().currentUser?.providerData[indexPath.row]cell?.textLabel?.text = userInfo?.providerID
-            //provider specific UID
-            
-            
-    }
-    
     // MARK: -  IBActions
     
-//func loginButtonTapped(_ sender: UIButton) {
+@IBAction func loginButtonTapped(_ sender: UIButton) {
             // 1
-  //      let authUI = FUIAuth.defaultAuthUI()
+    guard let authUI = FUIAuth.defaultAuthUI()
+        else { return }
+    authUI.delegate = self
     
+      let providers: [FUIAuthProvider] = [
+                FUIFacebookAuth(),
+                FUIEmailAuth()
+          ]
+              authUI.providers = providers
         // 2
-   //     authUI.delegate = self as! FUIAuthDelegate
+    
         
         // 3
-    //let authViewController = authUI?.authViewController()
-        //present(authViewController, animated: true)
-    //}
+    let authViewController = authUI.authViewController()
+        present(authViewController, animated: true)
+    
+    // 1
+    if let user = Auth.auth().currentUser {
+        // 2
+        let rootRef = Database.database().reference()
+        // 3
+        let userRef = rootRef.child("users").child(user.uid)
+    
+        userRef.observeSingleEvent(of: .value, with: { (snapshot) in
+            // 1
+            if let userDict = snapshot.value as? [String : Any] {
+                print("now to print dictionary")
+                print(userDict.debugDescription)
+            }
+            
+            // 2 handle snapshot containing data
+        })
+    }
+    
+    
+    }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
         let sourceApplication =  options[UIApplication.OpenURLOptionsKey.sourceApplication] as! String?
@@ -78,9 +83,31 @@ class LoginViewController: UIViewController {
     }
     
 
-//extension LoginViewController: FUIAuthDelegate {
-//       func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {
- //              print("handle user singup / login")
- //      }
- //  }
+
 }
+
+extension LoginViewController: FUIAuthDelegate {
+    func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {
+        if let error = error {
+                assertionFailure("Error signing in: \(error.localizedDescription)")
+            return
+        }
+        
+        guard let user = authDataResult?.user
+            else { return }
+        
+        let userRef = Database.database().reference().child("users").child(user.uid)
+        
+        userRef.observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            if let user = User(snapshot: snapshot) {
+                print("Welcome back, \(user.username).")
+            } else {
+                    print("New user!")
+            }
+            
+        })
+        
+               print("handle user signup / login")
+       }
+   }
