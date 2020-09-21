@@ -17,19 +17,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FC1-TB-MRr">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="421"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="321"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="FYu-Bj-9VF">
-                                        <rect key="frame" x="87.056603773584811" y="189" width="236.5" height="85"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="FYu-Bj-9VF">
+                                        <rect key="frame" x="87.056603773584811" y="118" width="237" height="85"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Let's Drink!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRi-w8-Izh">
-                                                <rect key="frame" x="37" y="0.0" width="162.5" height="39.5"/>
+                                                <rect key="frame" x="37" y="0.0" width="163" height="39.5"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Login to drink with your friends" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtY-iU-uKD">
-                                                <rect key="frame" x="0.0" y="64.5" width="236.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="64.5" width="237" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -38,11 +38,15 @@
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.41568627450000001" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="FYu-Bj-9VF" firstAttribute="centerX" secondItem="FC1-TB-MRr" secondAttribute="centerX" id="1OT-Uz-D32"/>
+                                    <constraint firstItem="FYu-Bj-9VF" firstAttribute="centerY" secondItem="FC1-TB-MRr" secondAttribute="centerY" id="RDH-56-YYl"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="FC1-TB-MRr" secondAttribute="bottom" constant="475" id="5BM-qm-7Mg"/>
+                            <constraint firstAttribute="bottom" secondItem="FC1-TB-MRr" secondAttribute="bottom" constant="575" id="5BM-qm-7Mg"/>
                             <constraint firstItem="FC1-TB-MRr" firstAttribute="top" secondItem="grg-5P-nhq" secondAttribute="top" id="JgC-h5-KJa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mw1-aL-Iin"/>
