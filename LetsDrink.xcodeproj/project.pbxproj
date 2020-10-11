@@ -29,11 +29,15 @@
 		B25D46742313752800590DE1 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D46722313752800590DE1 /* FBSDKLoginKit.framework */; };
 		B25D46752313752800590DE1 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D46722313752800590DE1 /* FBSDKLoginKit.framework */; };
 		B28FB4D0251861FB00ECBEE3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28FB4CF251861FB00ECBEE3 /* User.swift */; };
+		B2ACD8E92531229500FB02CB /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ACD8E82531229500FB02CB /* CreateUsernameViewController.swift */; };
 		B2D7840E2340515400AE6A78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2D7840D2340515300AE6A78 /* GoogleService-Info.plist */; };
 		B2D7840F2340515400AE6A78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2D7840D2340515300AE6A78 /* GoogleService-Info.plist */; };
 		B2D784102340515400AE6A78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2D7840D2340515300AE6A78 /* GoogleService-Info.plist */; };
 		B2EA4539236F75DE00DBC4B3 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2EA4538236F75DE00DBC4B3 /* Login.storyboard */; };
 		B2EA453B236F76D500DBC4B3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EA453A236F76D500DBC4B3 /* LoginViewController.swift */; };
+		B2F0BD7325336439009ACF45 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F0BD7225336439009ACF45 /* UserService.swift */; };
+		B2F0BD8025337292009ACF45 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F0BD7F25337292009ACF45 /* Constants.swift */; };
+		B2F39DB62533750C00E4391D /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F39DB52533750C00E4391D /* Storyboard+Utility.swift */; };
 		C4D2AFC4B65CBEAF8E8F6431 /* Pods_LetsDrinkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF59885819711A149804C8FD /* Pods_LetsDrinkUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,9 +84,13 @@
 		B25D466E2313751900590DE1 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		B25D46722313752800590DE1 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		B28FB4CF251861FB00ECBEE3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B2ACD8E82531229500FB02CB /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
 		B2D7840D2340515300AE6A78 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B2EA4538236F75DE00DBC4B3 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B2EA453A236F76D500DBC4B3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B2F0BD7225336439009ACF45 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		B2F0BD7F25337292009ACF45 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B2F39DB52533750C00E4391D /* Storyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		D468E112071387F6B0D6C3C5 /* Pods-LetsDrink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsDrink.debug.xcconfig"; path = "Target Support Files/Pods-LetsDrink/Pods-LetsDrink.debug.xcconfig"; sourceTree = "<group>"; };
 		D9B9C95FD9B10ABE0902ADF9 /* Pods-LetsDrink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsDrink.release.xcconfig"; path = "Target Support Files/Pods-LetsDrink/Pods-LetsDrink.release.xcconfig"; sourceTree = "<group>"; };
 		FF59885819711A149804C8FD /* Pods_LetsDrinkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsDrinkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +174,7 @@
 		B25D463123135BE800590DE1 /* LetsDrink */ = {
 			isa = PBXGroup;
 			children = (
+				B2F39DB4253374E700E4391D /* Extensions */,
 				B2EA4536236F742400DBC4B3 /* Storyboards */,
 				B25D463223135BE800590DE1 /* AppDelegate.swift */,
 				B2EA4535236F73F400DBC4B3 /* Controllers */,
@@ -228,6 +237,7 @@
 		B28FB4CD25183B4E00ECBEE3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B2F0BD7225336439009ACF45 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -244,6 +254,7 @@
 			children = (
 				B25D463423135BE800590DE1 /* ViewController.swift */,
 				B2EA453A236F76D500DBC4B3 /* LoginViewController.swift */,
+				B2ACD8E82531229500FB02CB /* CreateUsernameViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -263,8 +274,17 @@
 			children = (
 				B2D7840D2340515300AE6A78 /* GoogleService-Info.plist */,
 				B25D463E23135BEA00590DE1 /* Info.plist */,
+				B2F0BD7F25337292009ACF45 /* Constants.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2F39DB4253374E700E4391D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B2F39DB52533750C00E4391D /* Storyboard+Utility.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F6FB64A1B4222085E3CC41DA /* Frameworks */ = {
@@ -345,7 +365,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = AlCo;
 				TargetAttributes = {
 					B25D462E23135BE800590DE1 = {
@@ -527,7 +547,11 @@
 			files = (
 				B28FB4D0251861FB00ECBEE3 /* User.swift in Sources */,
 				B2EA453B236F76D500DBC4B3 /* LoginViewController.swift in Sources */,
+				B2F0BD7325336439009ACF45 /* UserService.swift in Sources */,
+				B2F39DB62533750C00E4391D /* Storyboard+Utility.swift in Sources */,
 				B25D463523135BE800590DE1 /* ViewController.swift in Sources */,
+				B2F0BD8025337292009ACF45 /* Constants.swift in Sources */,
+				B2ACD8E92531229500FB02CB /* CreateUsernameViewController.swift in Sources */,
 				B25D463323135BE800590DE1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,6 +633,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -671,6 +696,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
