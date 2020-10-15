@@ -35,16 +35,21 @@
 	<string>401046300444324</string>
 	<key>FacebookDisplayName</key>
 	<string>LetsDrink</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
+		<string>fbshareextension</string>
 		<string>fb-messenger-api</string>
 		<string>fbauth2</string>
-		<string>fbshareextension</string>
-		<string>fb-messenger-share-api</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>This is testing only, no usage</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>This is testing only, no usage</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

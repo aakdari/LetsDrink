@@ -10,26 +10,16 @@
 		0517A22EEC1B08BA1AD946B3 /* Pods_LetsDrinkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397E81C4AC0E6C1399B1237C /* Pods_LetsDrinkTests.framework */; };
 		544C7AAB64FC8342AFDC0E32 /* Pods_LetsDrink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771A4FAF793BDFA917B4DDBD /* Pods_LetsDrink.framework */; };
 		B25D463323135BE800590DE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D463223135BE800590DE1 /* AppDelegate.swift */; };
-		B25D463523135BE800590DE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D463423135BE800590DE1 /* ViewController.swift */; };
 		B25D463823135BE800590DE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B25D463623135BE800590DE1 /* Main.storyboard */; };
 		B25D463A23135BEA00590DE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B25D463923135BEA00590DE1 /* Assets.xcassets */; };
 		B25D463D23135BEA00590DE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B25D463B23135BEA00590DE1 /* LaunchScreen.storyboard */; };
 		B25D464823135BEA00590DE1 /* LetsDrinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D464723135BEA00590DE1 /* LetsDrinkTests.swift */; };
 		B25D465323135BEA00590DE1 /* LetsDrinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D465223135BEA00590DE1 /* LetsDrinkUITests.swift */; };
-		B25D4666231374B500590DE1 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D4665231374B500590DE1 /* Bolts.framework */; };
-		B25D4667231374B500590DE1 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D4665231374B500590DE1 /* Bolts.framework */; };
-		B25D4668231374B500590DE1 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D4665231374B500590DE1 /* Bolts.framework */; };
-		B25D466B2313750B00590DE1 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D466A2313750B00590DE1 /* FBSDKCoreKit.framework */; };
-		B25D466C2313750B00590DE1 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D466A2313750B00590DE1 /* FBSDKCoreKit.framework */; };
-		B25D466D2313750B00590DE1 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D466A2313750B00590DE1 /* FBSDKCoreKit.framework */; };
-		B25D466F2313751900590DE1 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D466E2313751900590DE1 /* FBSDKShareKit.framework */; };
-		B25D46702313751900590DE1 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D466E2313751900590DE1 /* FBSDKShareKit.framework */; };
-		B25D46712313751900590DE1 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D466E2313751900590DE1 /* FBSDKShareKit.framework */; };
-		B25D46732313752800590DE1 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D46722313752800590DE1 /* FBSDKLoginKit.framework */; };
-		B25D46742313752800590DE1 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D46722313752800590DE1 /* FBSDKLoginKit.framework */; };
-		B25D46752313752800590DE1 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D46722313752800590DE1 /* FBSDKLoginKit.framework */; };
+		B271890C2537FC8500AE397E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B271890B2537FC8500AE397E /* HomeViewController.swift */; };
+		B27189112537FC9600AE397E /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27189102537FC9600AE397E /* FindFriendsViewController.swift */; };
 		B28FB4D0251861FB00ECBEE3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28FB4CF251861FB00ECBEE3 /* User.swift */; };
 		B2ACD8E92531229500FB02CB /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ACD8E82531229500FB02CB /* CreateUsernameViewController.swift */; };
+		B2B68C3F2533CBBF000B0A29 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2B68C3E2533CBBF000B0A29 /* AuthenticationServices.framework */; };
 		B2D7840E2340515400AE6A78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2D7840D2340515300AE6A78 /* GoogleService-Info.plist */; };
 		B2D7840F2340515400AE6A78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2D7840D2340515300AE6A78 /* GoogleService-Info.plist */; };
 		B2D784102340515400AE6A78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2D7840D2340515300AE6A78 /* GoogleService-Info.plist */; };
@@ -67,7 +57,6 @@
 		A5F94005E8A2423C62D56CD4 /* Pods-LetsDrinkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsDrinkTests.debug.xcconfig"; path = "Target Support Files/Pods-LetsDrinkTests/Pods-LetsDrinkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B25D462F23135BE800590DE1 /* LetsDrink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsDrink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B25D463223135BE800590DE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B25D463423135BE800590DE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B25D463723135BE800590DE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B25D463923135BEA00590DE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B25D463C23135BEA00590DE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,12 +68,11 @@
 		B25D465223135BEA00590DE1 /* LetsDrinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsDrinkUITests.swift; sourceTree = "<group>"; };
 		B25D465423135BEA00590DE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B25D466023135CB300590DE1 /* LetsDrink.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LetsDrink.entitlements; sourceTree = "<group>"; };
-		B25D4665231374B500590DE1 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		B25D466A2313750B00590DE1 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		B25D466E2313751900590DE1 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
-		B25D46722313752800590DE1 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		B271890B2537FC8500AE397E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B27189102537FC9600AE397E /* FindFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFriendsViewController.swift; sourceTree = "<group>"; };
 		B28FB4CF251861FB00ECBEE3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B2ACD8E82531229500FB02CB /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
+		B2B68C3E2533CBBF000B0A29 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		B2D7840D2340515300AE6A78 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B2EA4538236F75DE00DBC4B3 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B2EA453A236F76D500DBC4B3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -101,10 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B25D466F2313751900590DE1 /* FBSDKShareKit.framework in Frameworks */,
-				B25D46732313752800590DE1 /* FBSDKLoginKit.framework in Frameworks */,
-				B25D466B2313750B00590DE1 /* FBSDKCoreKit.framework in Frameworks */,
-				B25D4666231374B500590DE1 /* Bolts.framework in Frameworks */,
+				B2B68C3F2533CBBF000B0A29 /* AuthenticationServices.framework in Frameworks */,
 				544C7AAB64FC8342AFDC0E32 /* Pods_LetsDrink.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,10 +98,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B25D46702313751900590DE1 /* FBSDKShareKit.framework in Frameworks */,
-				B25D46742313752800590DE1 /* FBSDKLoginKit.framework in Frameworks */,
-				B25D466C2313750B00590DE1 /* FBSDKCoreKit.framework in Frameworks */,
-				B25D4667231374B500590DE1 /* Bolts.framework in Frameworks */,
 				0517A22EEC1B08BA1AD946B3 /* Pods_LetsDrinkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,10 +106,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B25D46712313751900590DE1 /* FBSDKShareKit.framework in Frameworks */,
-				B25D46752313752800590DE1 /* FBSDKLoginKit.framework in Frameworks */,
-				B25D466D2313750B00590DE1 /* FBSDKCoreKit.framework in Frameworks */,
-				B25D4668231374B500590DE1 /* Bolts.framework in Frameworks */,
 				C4D2AFC4B65CBEAF8E8F6431 /* Pods_LetsDrinkUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,10 +188,6 @@
 		B25D4669231374C900590DE1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B25D4665231374B500590DE1 /* Bolts.framework */,
-				B25D466A2313750B00590DE1 /* FBSDKCoreKit.framework */,
-				B25D46722313752800590DE1 /* FBSDKLoginKit.framework */,
-				B25D466E2313751900590DE1 /* FBSDKShareKit.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -252,9 +225,10 @@
 		B2EA4535236F73F400DBC4B3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B25D463423135BE800590DE1 /* ViewController.swift */,
 				B2EA453A236F76D500DBC4B3 /* LoginViewController.swift */,
 				B2ACD8E82531229500FB02CB /* CreateUsernameViewController.swift */,
+				B271890B2537FC8500AE397E /* HomeViewController.swift */,
+				B27189102537FC9600AE397E /* FindFriendsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -290,6 +264,7 @@
 		F6FB64A1B4222085E3CC41DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B2B68C3E2533CBBF000B0A29 /* AuthenticationServices.framework */,
 				771A4FAF793BDFA917B4DDBD /* Pods_LetsDrink.framework */,
 				397E81C4AC0E6C1399B1237C /* Pods_LetsDrinkTests.framework */,
 				FF59885819711A149804C8FD /* Pods_LetsDrinkUITests.framework */,
@@ -548,8 +523,9 @@
 				B28FB4D0251861FB00ECBEE3 /* User.swift in Sources */,
 				B2EA453B236F76D500DBC4B3 /* LoginViewController.swift in Sources */,
 				B2F0BD7325336439009ACF45 /* UserService.swift in Sources */,
+				B271890C2537FC8500AE397E /* HomeViewController.swift in Sources */,
 				B2F39DB62533750C00E4391D /* Storyboard+Utility.swift in Sources */,
-				B25D463523135BE800590DE1 /* ViewController.swift in Sources */,
+				B27189112537FC9600AE397E /* FindFriendsViewController.swift in Sources */,
 				B2F0BD8025337292009ACF45 /* Constants.swift in Sources */,
 				B2ACD8E92531229500FB02CB /* CreateUsernameViewController.swift in Sources */,
 				B25D463323135BE800590DE1 /* AppDelegate.swift in Sources */,
@@ -642,6 +618,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -667,6 +644,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -705,6 +683,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -719,11 +698,13 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -734,7 +715,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LetsDrink/LetsDrink.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = TT79Z6BW63;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -746,7 +726,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = SocialTools.LetsDrink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -762,7 +742,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LetsDrink/LetsDrink.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = TT79Z6BW63;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -774,7 +753,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = SocialTools.LetsDrink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
