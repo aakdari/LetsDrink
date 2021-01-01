@@ -9,6 +9,7 @@
 import Foundation
 import FirebaseAuth.FIRUser
 import FirebaseDatabase
+import Firebase
 
 
 

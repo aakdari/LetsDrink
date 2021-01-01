@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0517A22EEC1B08BA1AD946B3 /* Pods_LetsDrinkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397E81C4AC0E6C1399B1237C /* Pods_LetsDrinkTests.framework */; };
+		5006D1BE259FA4AF00F068EA /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006D1BD259FA4AF00F068EA /* MainTabBarController.swift */; };
+		5006D1C3259FA98200F068EA /* MGPhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006D1C2259FA98200F068EA /* MGPhotoHelper.swift */; };
 		544C7AAB64FC8342AFDC0E32 /* Pods_LetsDrink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771A4FAF793BDFA917B4DDBD /* Pods_LetsDrink.framework */; };
 		B25D463323135BE800590DE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D463223135BE800590DE1 /* AppDelegate.swift */; };
 		B25D463823135BE800590DE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B25D463623135BE800590DE1 /* Main.storyboard */; };
@@ -28,7 +29,6 @@
 		B2F0BD7325336439009ACF45 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F0BD7225336439009ACF45 /* UserService.swift */; };
 		B2F0BD8025337292009ACF45 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F0BD7F25337292009ACF45 /* Constants.swift */; };
 		B2F39DB62533750C00E4391D /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F39DB52533750C00E4391D /* Storyboard+Utility.swift */; };
-		C4D2AFC4B65CBEAF8E8F6431 /* Pods_LetsDrinkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF59885819711A149804C8FD /* Pods_LetsDrinkUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,12 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		39300E10900BDEB3373C2089 /* Pods-LetsDrinkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsDrinkUITests.release.xcconfig"; path = "Target Support Files/Pods-LetsDrinkUITests/Pods-LetsDrinkUITests.release.xcconfig"; sourceTree = "<group>"; };
-		397E81C4AC0E6C1399B1237C /* Pods_LetsDrinkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsDrinkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5006D1BD259FA4AF00F068EA /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		5006D1C2259FA98200F068EA /* MGPhotoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MGPhotoHelper.swift; path = LetsDrink/Controllers/MGPhotoHelper.swift; sourceTree = SOURCE_ROOT; };
 		771A4FAF793BDFA917B4DDBD /* Pods_LetsDrink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsDrink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		965B0D776E4AE6BC59D5A924 /* Pods-LetsDrinkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsDrinkUITests.debug.xcconfig"; path = "Target Support Files/Pods-LetsDrinkUITests/Pods-LetsDrinkUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		9F89549A3D293DE75A18A74E /* Pods-LetsDrinkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsDrinkTests.release.xcconfig"; path = "Target Support Files/Pods-LetsDrinkTests/Pods-LetsDrinkTests.release.xcconfig"; sourceTree = "<group>"; };
-		A5F94005E8A2423C62D56CD4 /* Pods-LetsDrinkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsDrinkTests.debug.xcconfig"; path = "Target Support Files/Pods-LetsDrinkTests/Pods-LetsDrinkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B25D462F23135BE800590DE1 /* LetsDrink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsDrink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B25D463223135BE800590DE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B25D463723135BE800590DE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,7 +78,6 @@
 		B2F39DB52533750C00E4391D /* Storyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		D468E112071387F6B0D6C3C5 /* Pods-LetsDrink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsDrink.debug.xcconfig"; path = "Target Support Files/Pods-LetsDrink/Pods-LetsDrink.debug.xcconfig"; sourceTree = "<group>"; };
 		D9B9C95FD9B10ABE0902ADF9 /* Pods-LetsDrink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsDrink.release.xcconfig"; path = "Target Support Files/Pods-LetsDrink/Pods-LetsDrink.release.xcconfig"; sourceTree = "<group>"; };
-		FF59885819711A149804C8FD /* Pods_LetsDrinkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsDrinkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +94,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0517A22EEC1B08BA1AD946B3 /* Pods_LetsDrinkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +101,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4D2AFC4B65CBEAF8E8F6431 /* Pods_LetsDrinkUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,10 +112,6 @@
 			children = (
 				D468E112071387F6B0D6C3C5 /* Pods-LetsDrink.debug.xcconfig */,
 				D9B9C95FD9B10ABE0902ADF9 /* Pods-LetsDrink.release.xcconfig */,
-				A5F94005E8A2423C62D56CD4 /* Pods-LetsDrinkTests.debug.xcconfig */,
-				9F89549A3D293DE75A18A74E /* Pods-LetsDrinkTests.release.xcconfig */,
-				965B0D776E4AE6BC59D5A924 /* Pods-LetsDrinkUITests.debug.xcconfig */,
-				39300E10900BDEB3373C2089 /* Pods-LetsDrinkUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -195,6 +185,7 @@
 		B28FB4CB25183B3D00ECBEE3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				5006D1C2259FA98200F068EA /* MGPhotoHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -226,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				B2EA453A236F76D500DBC4B3 /* LoginViewController.swift */,
+				5006D1BD259FA4AF00F068EA /* MainTabBarController.swift */,
 				B2ACD8E82531229500FB02CB /* CreateUsernameViewController.swift */,
 				B271890B2537FC8500AE397E /* HomeViewController.swift */,
 				B27189102537FC9600AE397E /* FindFriendsViewController.swift */,
@@ -266,8 +258,6 @@
 			children = (
 				B2B68C3E2533CBBF000B0A29 /* AuthenticationServices.framework */,
 				771A4FAF793BDFA917B4DDBD /* Pods_LetsDrink.framework */,
-				397E81C4AC0E6C1399B1237C /* Pods_LetsDrinkTests.framework */,
-				FF59885819711A149804C8FD /* Pods_LetsDrinkUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -299,7 +289,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B25D465A23135BEA00590DE1 /* Build configuration list for PBXNativeTarget "LetsDrinkTests" */;
 			buildPhases = (
-				76B22AD7E8438B5F3701EF99 /* [CP] Check Pods Manifest.lock */,
 				B25D463F23135BEA00590DE1 /* Sources */,
 				B25D464023135BEA00590DE1 /* Frameworks */,
 				B25D464123135BEA00590DE1 /* Resources */,
@@ -318,7 +307,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B25D465D23135BEA00590DE1 /* Build configuration list for PBXNativeTarget "LetsDrinkUITests" */;
 			buildPhases = (
-				28E49BD4E2BB97E625D28BDE /* [CP] Check Pods Manifest.lock */,
 				B25D464A23135BEA00590DE1 /* Sources */,
 				B25D464B23135BEA00590DE1 /* Frameworks */,
 				B25D464C23135BEA00590DE1 /* Resources */,
@@ -447,50 +435,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LetsDrink/Pods-LetsDrink-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		28E49BD4E2BB97E625D28BDE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LetsDrinkUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		76B22AD7E8438B5F3701EF99 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LetsDrinkTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		DCBA7726BF239DBE68B770B7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -522,8 +466,10 @@
 			files = (
 				B28FB4D0251861FB00ECBEE3 /* User.swift in Sources */,
 				B2EA453B236F76D500DBC4B3 /* LoginViewController.swift in Sources */,
+				5006D1BE259FA4AF00F068EA /* MainTabBarController.swift in Sources */,
 				B2F0BD7325336439009ACF45 /* UserService.swift in Sources */,
 				B271890C2537FC8500AE397E /* HomeViewController.swift in Sources */,
+				5006D1C3259FA98200F068EA /* MGPhotoHelper.swift in Sources */,
 				B2F39DB62533750C00E4391D /* Storyboard+Utility.swift in Sources */,
 				B27189112537FC9600AE397E /* FindFriendsViewController.swift in Sources */,
 				B2F0BD8025337292009ACF45 /* Constants.swift in Sources */,
@@ -622,6 +568,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -639,6 +586,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
@@ -687,6 +635,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -698,6 +647,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
@@ -764,7 +714,6 @@
 		};
 		B25D465B23135BEA00590DE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5F94005E8A2423C62D56CD4 /* Pods-LetsDrinkTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -791,7 +740,6 @@
 		};
 		B25D465C23135BEA00590DE1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F89549A3D293DE75A18A74E /* Pods-LetsDrinkTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -818,7 +766,6 @@
 		};
 		B25D465E23135BEA00590DE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 965B0D776E4AE6BC59D5A924 /* Pods-LetsDrinkUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -844,7 +791,6 @@
 		};
 		B25D465F23135BEA00590DE1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39300E10900BDEB3373C2089 /* Pods-LetsDrinkUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

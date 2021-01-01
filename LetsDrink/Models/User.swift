@@ -8,6 +8,7 @@
 
 import Foundation
 import FirebaseDatabase.FIRDataSnapshot
+import Firebase
 
 
 
@@ -52,7 +53,7 @@ class User: Codable {
 
     // MARK: - Class Methods
 
-    // 5
+    // 1
     static func setCurrent(_ user: User, writeToUserDefaults: Bool = false) {
         // 2
         if writeToUserDefaults {
