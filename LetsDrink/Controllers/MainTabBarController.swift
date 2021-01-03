@@ -11,17 +11,17 @@ import UIKit
 
 class MainTabBarController: UITabBarController {
     
-    let photoHelper = MGPhotoHelper()
+    var photoHelper = MGPhotoHelper()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         photoHelper.completionHandler = { image in
-            print("handle image")
+            print("handle image", image)
         }
         
         // 1
-        delegate = self// 2
+        delegate = self
+        // 2
         tabBar.unselectedItemTintColor = .black
     }
 }

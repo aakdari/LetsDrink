@@ -10,6 +10,7 @@ import UIKit
 
 class MGPhotoHelper: NSObject {
     
+
     // MARK: - Properties
     
     var completionHandler: ((UIImage) -> Void)?
@@ -54,6 +55,7 @@ class MGPhotoHelper: NSObject {
         let imagePickerController = UIImagePickerController()
         imagePickerController.sourceType = sourceType
         imagePickerController.delegate = self
+        imagePickerController.mediaTypes = ["public.image"]
         
         viewController.present(imagePickerController, animated: true)
     }
@@ -67,6 +69,8 @@ extension MGPhotoHelper: UINavigationControllerDelegate, UIImagePickerController
         
         picker.dismiss(animated: true)
     }
+    
+    
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true)
