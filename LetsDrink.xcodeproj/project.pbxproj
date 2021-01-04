@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		5006D1BE259FA4AF00F068EA /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006D1BD259FA4AF00F068EA /* MainTabBarController.swift */; };
 		5006D1C3259FA98200F068EA /* MGPhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006D1C2259FA98200F068EA /* MGPhotoHelper.swift */; };
+		5006D1EF25A29B9700F068EA /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006D1EE25A29B9700F068EA /* StorageService.swift */; };
+		5006D1F425A29DA800F068EA /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006D1F325A29DA800F068EA /* PostService.swift */; };
+		5006D1F925A2B08A00F068EA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006D1F825A2B08A00F068EA /* Post.swift */; };
+		5006D1FE25A2EFEE00F068EA /* UIImage+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006D1FD25A2EFEE00F068EA /* UIImage+Size.swift */; };
+		5006D20325A2F0F800F068EA /* StorageReference+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006D20225A2F0F800F068EA /* StorageReference+Post.swift */; };
 		544C7AAB64FC8342AFDC0E32 /* Pods_LetsDrink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771A4FAF793BDFA917B4DDBD /* Pods_LetsDrink.framework */; };
 		B25D463323135BE800590DE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D463223135BE800590DE1 /* AppDelegate.swift */; };
 		B25D463823135BE800590DE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B25D463623135BE800590DE1 /* Main.storyboard */; };
@@ -51,6 +56,11 @@
 /* Begin PBXFileReference section */
 		5006D1BD259FA4AF00F068EA /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		5006D1C2259FA98200F068EA /* MGPhotoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MGPhotoHelper.swift; path = LetsDrink/Controllers/MGPhotoHelper.swift; sourceTree = SOURCE_ROOT; };
+		5006D1EE25A29B9700F068EA /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		5006D1F325A29DA800F068EA /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		5006D1F825A2B08A00F068EA /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		5006D1FD25A2EFEE00F068EA /* UIImage+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Size.swift"; sourceTree = "<group>"; };
+		5006D20225A2F0F800F068EA /* StorageReference+Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageReference+Post.swift"; sourceTree = "<group>"; };
 		771A4FAF793BDFA917B4DDBD /* Pods_LetsDrink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsDrink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B25D462F23135BE800590DE1 /* LetsDrink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsDrink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B25D463223135BE800590DE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				B28FB4CF251861FB00ECBEE3 /* User.swift */,
+				5006D1F825A2B08A00F068EA /* Post.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -202,6 +213,8 @@
 			isa = PBXGroup;
 			children = (
 				B2F0BD7225336439009ACF45 /* UserService.swift */,
+				5006D1EE25A29B9700F068EA /* StorageService.swift */,
+				5006D1F325A29DA800F068EA /* PostService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -249,6 +262,8 @@
 			isa = PBXGroup;
 			children = (
 				B2F39DB52533750C00E4391D /* Storyboard+Utility.swift */,
+				5006D1FD25A2EFEE00F068EA /* UIImage+Size.swift */,
+				5006D20225A2F0F800F068EA /* StorageReference+Post.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -465,14 +480,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				B28FB4D0251861FB00ECBEE3 /* User.swift in Sources */,
+				5006D1EF25A29B9700F068EA /* StorageService.swift in Sources */,
 				B2EA453B236F76D500DBC4B3 /* LoginViewController.swift in Sources */,
 				5006D1BE259FA4AF00F068EA /* MainTabBarController.swift in Sources */,
 				B2F0BD7325336439009ACF45 /* UserService.swift in Sources */,
+				5006D1F925A2B08A00F068EA /* Post.swift in Sources */,
+				5006D1FE25A2EFEE00F068EA /* UIImage+Size.swift in Sources */,
 				B271890C2537FC8500AE397E /* HomeViewController.swift in Sources */,
 				5006D1C3259FA98200F068EA /* MGPhotoHelper.swift in Sources */,
 				B2F39DB62533750C00E4391D /* Storyboard+Utility.swift in Sources */,
 				B27189112537FC9600AE397E /* FindFriendsViewController.swift in Sources */,
+				5006D20325A2F0F800F068EA /* StorageReference+Post.swift in Sources */,
 				B2F0BD8025337292009ACF45 /* Constants.swift in Sources */,
+				5006D1F425A29DA800F068EA /* PostService.swift in Sources */,
 				B2ACD8E92531229500FB02CB /* CreateUsernameViewController.swift in Sources */,
 				B25D463323135BE800590DE1 /* AppDelegate.swift in Sources */,
 			);

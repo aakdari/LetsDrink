@@ -57,7 +57,7 @@ class MGPhotoHelper: NSObject {
         imagePickerController.delegate = self
         imagePickerController.mediaTypes = ["public.image"]
         
-        viewController.present(imagePickerController, animated: true)
+        viewController.present(imagePickerController, animated: false)
     }
 }
 
@@ -67,12 +67,12 @@ extension MGPhotoHelper: UINavigationControllerDelegate, UIImagePickerController
                 completionHandler?(selectedImage)
         }
         
-        picker.dismiss(animated: true)
+        picker.dismiss(animated: false)
     }
     
     
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        picker.dismiss(animated: true)
+        picker.dismiss(animated: false)
     }
 }
