@@ -25,25 +25,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oDs-fl-17Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-302" y="334"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="DvP-XM-H3s">
-            <objects>
-                <viewController id="R7a-S9-9bI" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="yfw-31-HDg" customClass="HomeViewController" customModule="LetsDrink" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Qtr-Pf-fAF"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="tab_home_black" id="9tf-EG-eCN">
-                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
-                    </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JJD-jQ-R1O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-302" y="-272"/>
+            <point key="canvasLocation" x="-355" y="352"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7pM-7F-RCr">
@@ -61,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mnP-wx-mXj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="268" y="70"/>
+            <point key="canvasLocation" x="607" y="352"/>
         </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="lGW-iK-5Ou">
@@ -73,19 +55,28 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="R7a-S9-9bI" kind="relationship" relationship="viewControllers" id="ton-HS-6ES"/>
+                        <segue destination="dvb-QV-3Ro" kind="relationship" relationship="viewControllers" id="ton-HS-6ES"/>
                         <segue destination="9xU-om-RSI" kind="relationship" relationship="viewControllers" id="h3S-VN-sgL"/>
                         <segue destination="vxu-EK-PuW" kind="relationship" relationship="viewControllers" id="gm7-lg-3QP"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aTJ-88-cd8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1192" y="31"/>
+            <point key="canvasLocation" x="-354" y="-317"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="9fy-q5-Qpq">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Home" storyboardName="Home" id="dvb-QV-3Ro" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="AxQ-9Y-8Vv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uSg-KG-mCT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1372" y="91"/>
         </scene>
     </scenes>
     <resources>
         <image name="tab_find_friends_black" width="25" height="25"/>
-        <image name="tab_home_black" width="25" height="25"/>
         <image name="tab_plus_black" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

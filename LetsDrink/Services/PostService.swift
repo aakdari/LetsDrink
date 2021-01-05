@@ -13,19 +13,19 @@ import FirebaseDatabase
 
 struct PostService {
 
-static func create(for image: UIImage) {
-    let imageRef = StorageReference.newPostImageReference()
-    StorageService.uploadImage(image, at: imageRef) { (downloadURL) in
-        guard let downloadURL = downloadURL else {
-            return
+    static func create(for image: UIImage) {
+        let imageRef = StorageReference.newPostImageReference()
+        StorageService.uploadImage(image, at: imageRef) { (downloadURL) in
+            guard let downloadURL = downloadURL else {
+                return
+            }
+
+            let urlString = downloadURL.absoluteString
+            let aspectHeight = image.aspectHeight
+            print("creating post")
+            create(forURLString: urlString, aspectHeight: aspectHeight)
         }
-        
-        let urlString = downloadURL.absoluteString
-        let aspectHeight = image.aspectHeight
-        print("image url: \(urlString)")
-        create(forURLString: urlString, aspectHeight: aspectHeight)
     }
-}
     
     private static func create(forURLString urlString: String, aspectHeight: CGFloat) {
         //1 create reference to current user
@@ -39,6 +39,8 @@ static func create(for image: UIImage) {
         
         //4 construct relative path to the location where we store new post data
         let postRef = Database.database().reference().child("posts").child(currentUser.uid).childByAutoId()
+        
+        print("trying to post now")
         
         //5 write the post back to the db
         postRef.updateChildValues(dict)
