@@ -34,6 +34,8 @@ static func uploadImage(_ image: UIImage, at reference: StorageReference, comple
                 assertionFailure(error.localizedDescription)
                 return completion(nil)
             }
+            
+            completion(url)
         })
     })
 }

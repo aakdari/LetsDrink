@@ -20,11 +20,15 @@ class HomeViewController: UIViewController{
     //Mark - View Controller Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         UserService.posts(for: User.current) { (posts) in
                self.posts = posts
                self.tableView.reloadData()
         }
-        
     }
 }
 

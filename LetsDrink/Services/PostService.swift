@@ -17,6 +17,7 @@ struct PostService {
         let imageRef = StorageReference.newPostImageReference()
         StorageService.uploadImage(image, at: imageRef) { (downloadURL) in
             guard let downloadURL = downloadURL else {
+                print("downloadURL did not equal")
                 return
             }
 
@@ -25,6 +26,7 @@ struct PostService {
             print("creating post")
             create(forURLString: urlString, aspectHeight: aspectHeight)
         }
+        print("end of create service")
     }
     
     private static func create(forURLString urlString: String, aspectHeight: CGFloat) {
@@ -43,6 +45,7 @@ struct PostService {
         print("trying to post now")
         
         //5 write the post back to the db
-        postRef.updateChildValues(dict)
+        //postRef.updateChildValues(dict)
+        postRef.setValue(dict)
     }
 }
