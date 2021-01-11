@@ -14,6 +14,7 @@
 		5006D1F925A2B08A00F068EA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006D1F825A2B08A00F068EA /* Post.swift */; };
 		5006D1FE25A2EFEE00F068EA /* UIImage+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006D1FD25A2EFEE00F068EA /* UIImage+Size.swift */; };
 		5006D20325A2F0F800F068EA /* StorageReference+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006D20225A2F0F800F068EA /* StorageReference+Post.swift */; };
+		5010BAFC25ABF49B00F1ADF9 /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5010BAFB25ABF49B00F1ADF9 /* PostImageCell.swift */; };
 		505F470E25A3F5740019B406 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505F464D25A3D6A40019B406 /* Home.storyboard */; };
 		544C7AAB64FC8342AFDC0E32 /* Pods_LetsDrink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771A4FAF793BDFA917B4DDBD /* Pods_LetsDrink.framework */; };
 		B25D463323135BE800590DE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D463223135BE800590DE1 /* AppDelegate.swift */; };
@@ -62,6 +63,7 @@
 		5006D1F825A2B08A00F068EA /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		5006D1FD25A2EFEE00F068EA /* UIImage+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Size.swift"; sourceTree = "<group>"; };
 		5006D20225A2F0F800F068EA /* StorageReference+Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageReference+Post.swift"; sourceTree = "<group>"; };
+		5010BAFB25ABF49B00F1ADF9 /* PostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostImageCell.swift; path = LetsDrink/Controllers/PostImageCell.swift; sourceTree = SOURCE_ROOT; };
 		505F464D25A3D6A40019B406 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Home.storyboard; path = /Users/alakdari/Documents/LetsDrink/LetsDrink/Storyboards/Home.storyboard; sourceTree = "<absolute>"; };
 		771A4FAF793BDFA917B4DDBD /* Pods_LetsDrink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsDrink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B25D462F23135BE800590DE1 /* LetsDrink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsDrink.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -224,6 +226,7 @@
 		B28FB4CE25183B6200ECBEE3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5010BAFB25ABF49B00F1ADF9 /* PostImageCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -489,6 +492,7 @@
 				5006D1BE259FA4AF00F068EA /* MainTabBarController.swift in Sources */,
 				B2F0BD7325336439009ACF45 /* UserService.swift in Sources */,
 				5006D1F925A2B08A00F068EA /* Post.swift in Sources */,
+				5010BAFC25ABF49B00F1ADF9 /* PostImageCell.swift in Sources */,
 				5006D1FE25A2EFEE00F068EA /* UIImage+Size.swift in Sources */,
 				B271890C2537FC8500AE397E /* HomeViewController.swift in Sources */,
 				5006D1C3259FA98200F068EA /* MGPhotoHelper.swift in Sources */,
