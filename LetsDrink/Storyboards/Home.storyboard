@@ -17,8 +17,45 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostHeaderCell" rowHeight="54" id="vj8-us-QZ5" customClass="PostHeaderCell" customModule="LetsDrink" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="54"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vj8-us-QZ5" id="RX9-Ot-xss">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgR-IM-ngF">
+                                            <rect key="frame" x="185" y="5" width="44" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="iaw-fC-3jd"/>
+                                                <constraint firstAttribute="width" constant="44" id="jks-9n-meD"/>
+                                            </constraints>
+                                            <state key="normal" image="btn_options_black"/>
+                                            <connections>
+                                                <action selector="optionButton:" destination="vj8-us-QZ5" eventType="touchUpInside" id="KvR-7d-hnk"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsh-SL-h8w">
+                                            <rect key="frame" x="15" y="16.5" width="76" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Rsh-SL-h8w" firstAttribute="leading" secondItem="RX9-Ot-xss" secondAttribute="leading" constant="15" id="7XT-vA-x5M"/>
+                                        <constraint firstItem="Rsh-SL-h8w" firstAttribute="centerY" secondItem="RX9-Ot-xss" secondAttribute="centerY" id="CEl-jC-yp6"/>
+                                        <constraint firstAttribute="trailing" secondItem="dgR-IM-ngF" secondAttribute="trailing" constant="185" id="Uh8-lX-i3y"/>
+                                        <constraint firstItem="dgR-IM-ngF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Rsh-SL-h8w" secondAttribute="trailing" constant="15" id="ofi-98-6ph"/>
+                                        <constraint firstItem="dgR-IM-ngF" firstAttribute="centerY" secondItem="RX9-Ot-xss" secondAttribute="centerY" id="q0A-be-aoX"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="usernameLabel" destination="Rsh-SL-h8w" id="u0Y-kn-3hX"/>
+                                </connections>
+                            </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostImageCell" rowHeight="375" id="95S-Fd-dsA" customClass="PostImageCell" customModule="LetsDrink" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="375"/>
+                                <rect key="frame" x="0.0" y="82" width="414" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="95S-Fd-dsA" id="dOe-Ab-Ljz" customClass="UIImageView">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="375"/>
@@ -32,6 +69,69 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="postImageView" destination="NCC-ir-Zmy" id="SDI-oB-Kfs"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostActionCell" rowHeight="46" id="osY-l3-JVO" customClass="PostActionCell" customModule="LetsDrink" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="457" width="414" height="46"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="osY-l3-JVO" id="I9r-7a-Dpk" customClass="PostActionCell" customModule="LetsDrink" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="46"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Zd-wo-YWw">
+                                            <rect key="frame" x="2" y="0.0" width="43" height="46"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="43" id="Gpq-Iw-dxR"/>
+                                                <constraint firstAttribute="width" secondItem="1Zd-wo-YWw" secondAttribute="height" multiplier="43:43" id="Ng4-ac-sbs"/>
+                                                <constraint firstAttribute="height" constant="43" id="sLq-lb-xHk"/>
+                                            </constraints>
+                                            <state key="normal" image="beer to be selected"/>
+                                            <connections>
+                                                <action selector="drinkButtonTapped:" destination="osY-l3-JVO" eventType="touchUpInside" id="hWz-wI-f1J"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="5 drinks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Be-aZ-F2o">
+                                            <rect key="frame" x="53" y="12.5" width="61" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="31 minutes ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMy-Un-A7Y">
+                                            <rect key="frame" x="283" y="0.0" width="116" height="46"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.60392156862745094" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5tn-EK-ZuF">
+                                            <rect key="frame" x="15" y="45.5" width="384" height="0.5"/>
+                                            <color key="backgroundColor" red="0.85882352941176465" green="0.85882352941176465" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="0.5" id="O62-54-w32"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="1Zd-wo-YWw" firstAttribute="leading" secondItem="I9r-7a-Dpk" secondAttribute="leading" constant="2" id="1eh-lw-zix"/>
+                                        <constraint firstAttribute="bottom" secondItem="5tn-EK-ZuF" secondAttribute="bottom" id="3Cr-iJ-sQk"/>
+                                        <constraint firstAttribute="trailing" secondItem="TMy-Un-A7Y" secondAttribute="trailing" constant="15" id="4ih-a4-1yE"/>
+                                        <constraint firstItem="TMy-Un-A7Y" firstAttribute="top" secondItem="I9r-7a-Dpk" secondAttribute="top" id="E5N-yJ-74u"/>
+                                        <constraint firstItem="TMy-Un-A7Y" firstAttribute="leading" secondItem="0Be-aZ-F2o" secondAttribute="trailing" constant="212" id="EkN-5o-z5b"/>
+                                        <constraint firstAttribute="trailing" secondItem="5tn-EK-ZuF" secondAttribute="trailing" constant="15" id="FAX-ZL-P18"/>
+                                        <constraint firstAttribute="bottom" secondItem="TMy-Un-A7Y" secondAttribute="bottom" id="FSE-Gl-PXH"/>
+                                        <constraint firstItem="0Be-aZ-F2o" firstAttribute="centerY" secondItem="I9r-7a-Dpk" secondAttribute="centerY" id="GPS-Tr-UDJ"/>
+                                        <constraint firstAttribute="trailing" secondItem="TMy-Un-A7Y" secondAttribute="trailing" constant="15" id="Or5-x0-b9b"/>
+                                        <constraint firstItem="1Zd-wo-YWw" firstAttribute="top" secondItem="I9r-7a-Dpk" secondAttribute="top" id="Pxn-wd-deM"/>
+                                        <constraint firstItem="0Be-aZ-F2o" firstAttribute="leading" secondItem="1Zd-wo-YWw" secondAttribute="trailing" constant="8" symbolic="YES" id="gFq-MB-tcr"/>
+                                        <constraint firstAttribute="bottom" secondItem="TMy-Un-A7Y" secondAttribute="bottom" id="rJA-BV-DZD"/>
+                                        <constraint firstAttribute="bottom" secondItem="1Zd-wo-YWw" secondAttribute="bottom" id="tlL-p1-d22"/>
+                                        <constraint firstItem="5tn-EK-ZuF" firstAttribute="leading" secondItem="I9r-7a-Dpk" secondAttribute="leading" constant="15" id="xJf-vc-nA7"/>
+                                        <constraint firstItem="TMy-Un-A7Y" firstAttribute="top" secondItem="I9r-7a-Dpk" secondAttribute="top" id="zIq-As-n2R"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="drinkButton" destination="1Zd-wo-YWw" id="zSt-p2-hPh"/>
+                                    <outlet property="drinkCountLabel" destination="0Be-aZ-F2o" id="bBO-6I-VxT"/>
+                                    <outlet property="timeAgoLabel" destination="TMy-Un-A7Y" id="vpe-sQ-RLs"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -73,6 +173,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="beer to be selected" width="161" height="167"/>
+        <image name="btn_options_black" width="24" height="24"/>
         <image name="tab_home_black" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

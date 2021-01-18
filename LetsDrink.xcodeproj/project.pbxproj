@@ -16,6 +16,8 @@
 		5006D20325A2F0F800F068EA /* StorageReference+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006D20225A2F0F800F068EA /* StorageReference+Post.swift */; };
 		5010BAFC25ABF49B00F1ADF9 /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5010BAFB25ABF49B00F1ADF9 /* PostImageCell.swift */; };
 		505F470E25A3F5740019B406 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505F464D25A3D6A40019B406 /* Home.storyboard */; };
+		506C57D325B51C3900D3BD2C /* PostHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C57D225B51C3900D3BD2C /* PostHeaderCell.swift */; };
+		506C57DB25B524A200D3BD2C /* PostActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C57DA25B524A200D3BD2C /* PostActionCell.swift */; };
 		544C7AAB64FC8342AFDC0E32 /* Pods_LetsDrink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771A4FAF793BDFA917B4DDBD /* Pods_LetsDrink.framework */; };
 		B25D463323135BE800590DE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D463223135BE800590DE1 /* AppDelegate.swift */; };
 		B25D463823135BE800590DE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B25D463623135BE800590DE1 /* Main.storyboard */; };
@@ -65,6 +67,8 @@
 		5006D20225A2F0F800F068EA /* StorageReference+Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageReference+Post.swift"; sourceTree = "<group>"; };
 		5010BAFB25ABF49B00F1ADF9 /* PostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostImageCell.swift; path = LetsDrink/Controllers/PostImageCell.swift; sourceTree = SOURCE_ROOT; };
 		505F464D25A3D6A40019B406 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Home.storyboard; path = /Users/alakdari/Documents/LetsDrink/LetsDrink/Storyboards/Home.storyboard; sourceTree = "<absolute>"; };
+		506C57D225B51C3900D3BD2C /* PostHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostHeaderCell.swift; path = LetsDrink/Controllers/PostHeaderCell.swift; sourceTree = SOURCE_ROOT; };
+		506C57DA25B524A200D3BD2C /* PostActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostActionCell.swift; path = LetsDrink/Controllers/PostActionCell.swift; sourceTree = SOURCE_ROOT; };
 		771A4FAF793BDFA917B4DDBD /* Pods_LetsDrink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsDrink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B25D462F23135BE800590DE1 /* LetsDrink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsDrink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B25D463223135BE800590DE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -227,6 +231,8 @@
 			isa = PBXGroup;
 			children = (
 				5010BAFB25ABF49B00F1ADF9 /* PostImageCell.swift */,
+				506C57DA25B524A200D3BD2C /* PostActionCell.swift */,
+				506C57D225B51C3900D3BD2C /* PostHeaderCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -491,6 +497,8 @@
 				B2EA453B236F76D500DBC4B3 /* LoginViewController.swift in Sources */,
 				5006D1BE259FA4AF00F068EA /* MainTabBarController.swift in Sources */,
 				B2F0BD7325336439009ACF45 /* UserService.swift in Sources */,
+				506C57DB25B524A200D3BD2C /* PostActionCell.swift in Sources */,
+				506C57D325B51C3900D3BD2C /* PostHeaderCell.swift in Sources */,
 				5006D1F925A2B08A00F068EA /* Post.swift in Sources */,
 				5010BAFC25ABF49B00F1ADF9 /* PostImageCell.swift in Sources */,
 				5006D1FE25A2EFEE00F068EA /* UIImage+Size.swift in Sources */,
@@ -705,7 +713,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.1;
+				MARKETING_VERSION = 0.2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = SocialTools.LetsDrink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -733,7 +741,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.1;
+				MARKETING_VERSION = 0.2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = SocialTools.LetsDrink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
